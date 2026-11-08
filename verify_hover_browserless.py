@@ -18,7 +18,7 @@ def test_embedded_hover_data():
         missing = required_keys - row.keys()
         assert not missing, f"Missing hover data keys {missing} in record {row}"
 
-    print(f"Data integrity test passed: Validated hover data keys across {len(data)} records successfully.")
+    print(f"Data integrity test passed: Validated all hover data keys across {len(data)} records successfully.")
 
 if __name__ == "__main__":
     test_embedded_hover_data()
